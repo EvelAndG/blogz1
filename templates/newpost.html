@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Write a new Blog</h1>
+<form action="/newpost" method="post">
+    <div class="form-group">
+        <label for="title">Blog Title</label><br/>
+        <input style="background-color:rgba(131, 131, 255, 0.452)" class="form-control" name="title" type="text">
+    </div><br/>
+    <div class="form-group">
+        <label for="body">Your new blog</label><br/>
+        <input style="background-color:rgba(131, 131, 255, 0.452)" style="height:200px" class="form-control" name="body" type="text">
+        
+    </div>
+    <input style="background-color:tomato" type="submit" value="Add Entry"/>
+
+</form>
+
+{% endblock %}
